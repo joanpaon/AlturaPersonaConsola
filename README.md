@@ -7,5 +7,5 @@ Version .....:
 Author ......: José A. Pacheco Ondoño - joanpaon@gmail.com
 Platform ....: Java 8
 IDE .........: NetBeans 8.2
-Remote ......: https://github.com/joanpaon/TallaZapatoConsola.git
+Remote ......: https://github.com/joanpaon/AlturaPersonaConsola.git
 </pre>
