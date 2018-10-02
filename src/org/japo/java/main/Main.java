@@ -29,7 +29,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // Instanciar Scanner
-        Scanner scn = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in, "ISO-8859-1");
+        scn.useLocale(Locale.ENGLISH);
 
         // Variable
         double altura;
@@ -48,11 +49,11 @@ public class Main {
 
             // Mensaje
             System.out.printf(Locale.ENGLISH,
-                    "Mi altura es .............: %.2f metros\n", altura);
+                    "Mi altura es .............: %.2f metros%n", altura);
         } catch (Exception e) {
             // Mensaje
-            System.out.println("Entrada incorrecta");
-
+            System.out.println("ERROR: Entrada incorrecta");
+        } finally {
             // Borrar buffer
             scn.nextLine();
         }
