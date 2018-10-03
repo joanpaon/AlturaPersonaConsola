@@ -35,17 +35,11 @@ public class Main {
         // Variable
         double altura;
 
-        // Aplicar Convención Cultural
-        scn.useLocale(Locale.ENGLISH);
-
         // Cuarentena
         try {
             // Leer dato
             System.out.print("Mi altura es .............: ");
             altura = scn.nextDouble();
-
-            // Borrar buffer
-            scn.nextLine();
 
             // Mensaje
             System.out.printf(Locale.ENGLISH,
