@@ -26,7 +26,7 @@ public class Main {
 
     // Instanciar Scanner
     public static final Scanner SCN
-            = new Scanner(System.in, "ISO-8859-1")
+            = new Scanner(System.in, "Windows-1252")
                     .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
 
     /**
