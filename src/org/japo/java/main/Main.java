@@ -24,14 +24,15 @@ import java.util.Scanner;
  */
 public class Main {
 
+    // Instanciar Scanner
+    public static final Scanner SCN
+            = new Scanner(System.in, "ISO-8859-1")
+                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Instanciar Scanner
-        Scanner scn = new Scanner(System.in, "ISO-8859-1");
-        scn.useLocale(Locale.ENGLISH);
-
         // Variable
         double altura;
 
@@ -39,7 +40,7 @@ public class Main {
         try {
             // Leer dato
             System.out.print("Mi altura es .............: ");
-            altura = scn.nextDouble();
+            altura = SCN.nextDouble();
 
             // Mensaje
             System.out.printf(Locale.ENGLISH,
@@ -49,7 +50,7 @@ public class Main {
             System.out.println("ERROR: Entrada incorrecta");
         } finally {
             // Borrar buffer
-            scn.nextLine();
+            SCN.nextLine();
         }
     }
 }
